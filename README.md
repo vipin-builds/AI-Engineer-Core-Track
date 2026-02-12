@@ -1,4 +1,3 @@
-markdown
 # AI Engineer Core Track 🚀
 
 This repository tracks my journey through the AI Engineer Core Track, focusing on web scraping, data engineering, and NLP.
@@ -13,6 +12,7 @@ A dual-purpose project that scrapes quotes from the web and prepares them for AI
 *   **Interactive Game**: A terminal-based "Guess the Author" game with dynamic hints.
 
 ## 🛠️ Setup & Installation
-1. Clone the repository:
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/vipin-builds/AI-Engineer-Core-Track.git
