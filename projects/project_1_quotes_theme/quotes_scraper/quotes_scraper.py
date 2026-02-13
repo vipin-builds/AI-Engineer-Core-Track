@@ -30,22 +30,20 @@ class QuotesScraper:
 		"""Fetches the raw HTML content for the current page URL."""
 		try:
 			if bio_link:
-				print(f"Fetching: {bio_link}") # Slightly clearer message
+				#print(f"Fetching: {bio_link}") # Slightly clearer message
 				resp = get(bio_link)
 			else:
-				print(f"Fetching: {self.page_url}") # Slightly clearer message
+				#print(f"Fetching: {self.page_url}") # Slightly clearer message
 				resp = get(self.page_url)
 			resp.raise_for_status()
 			data = resp.text # Assign data inside the try block if successful
-			print(f"status: {resp.status_code}") # Use .status_code
+			#print(f"status: {resp.status_code}") # Use .status_code
 			return data # Return here on success
             
 		except RequestException as err:
 			print(f"Exception occured during API call {err}")
 			return None # <--- Explicitly return None on error
             
-		finally:
-			print("End of request function")
 
 	def extract_quotes(self, data):
 		"""
