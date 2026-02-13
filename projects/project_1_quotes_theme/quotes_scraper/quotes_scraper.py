@@ -97,7 +97,7 @@ class QuotesScraper:
 
 	def save_quotes(self, quotes_to_pickle, pickle_file_path):
 		print(f"Pickling {len(quotes_to_pickle)} files")
-		with open("./data/quotes.pickle", "wb") as file:
+		with open(pickle_file_path, "wb") as file:
 			pickle.dump(quotes_to_pickle, file)
 
 		print("Pickling complete.")
