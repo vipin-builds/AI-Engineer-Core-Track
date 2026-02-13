@@ -8,14 +8,14 @@ class GuessQuoteAuthor:
     def __init__(self):
         # Define the scraper here as an instance attribute (self.scraper)
         self.scraper = QuotesScraper("clean")
-        self.default_path = "./data/"
+        self.default_path = "./data"
         if not os.path.exists(self.default_path):
             self.base_dir = os.path.dirname(os.path.abspath(__file__))
             print(self.base_dir)
             self.default_path = os.path.join(self.base_dir, "data")
             print(self.default_path)
                 
-        self.pickle_file_path = "".join([self.default_path, "quotes.pickle"])
+        self.pickle_file_path = "".join([self.default_path, "/quotes.pickle"])
         print(self.pickle_file_path)
 
     def load_quotes_data(self):
